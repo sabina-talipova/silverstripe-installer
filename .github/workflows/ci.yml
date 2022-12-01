@@ -15,6 +15,7 @@ jobs:
     if: (github.event_name == 'schedule' && github.repository_owner == 'silverstripe') || (github.event_name != 'schedule')
     uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
     with:
+      composer_install: true
       # installer contains a sample behat.yml file, though there are no behat tests to run
       endtoend: false
       extra_jobs: |

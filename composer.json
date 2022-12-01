@@ -4,14 +4,26 @@
     "description": "The SilverStripe Framework Installer",
     "require": {
         "php": "^8.1",
-        "silverstripe/recipe-plugin": "^2",
+        "silverstripe/recipe-plugin": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
         "silverstripe/recipe-cms": "5.x-dev",
         "silverstripe-themes/simple": "~3.2.0",
-        "silverstripe/login-forms": "5.x-dev"
+        "silverstripe/login-forms": "5.x-dev",
+        "silverstripe/framework": "dev-pulls/5/remove-deprecated-code as 5.x-dev",
+        "silverstripe/assets": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
+        "silverstripe/admin": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
+        "silverstripe/asset-admin": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
+        "silverstripe/behat-extension": "dev-pulls/5/remove-deprecated-code as 5.x-dev",
+        "silverstripe/cms": "dev-pulls/5/remove-deprecated-code as 5.x-dev",
+        "silverstripe/campaign-admin": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
+        "silverstripe/config": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
+        "silverstripe/graphql": "dev-pulls/5/support-remove-deprecated-code as 5.x-dev",
+        "silverstripe/versioned": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
+        "silverstripe/versioned-admin": "dev-pulls/2/remove-deprecated-code as 2.x-dev",
+        "silverstripe/vendor-plugin": "dev-pulls/2/remove-deprecated-code as 2.x-dev"
     },
     "require-dev": {
         "silverstripe/recipe-testing": "^3",
-        "silverstripe/frameworktest": "^1",
+        "silverstripe/frameworktest": "dev-pulls/1/support-remove-deprecated-code as 1.x-dev",
         "mikey179/vfsstream": "^1.6.10"
     },
     "extra": {
@@ -25,7 +37,68 @@
             "favicon.ico"
         ]
     },
+    "repositories": {
+        "x1": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-admin"
+        },
+        "x2": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-asset-admin"
+        },
+        "x3": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-assets"
+        },
+        "x4": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-behat-extension"
+        },
+        "x5": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-campaign-admin"
+        },
+        "x6": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-cms"
+        },
+        "x7": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-framework"
+        },
+        "x8": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-frameworktest"
+        },
+        "x9": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-graphql"
+        },
+        "x10": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/recipe-plugin"
+        },
+        "x11": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/vendor-plugin"
+        },
+        "x12": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versioned"
+        },
+        "x13": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versioned-admin"
+        },
+        "x14": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-config"
+        }
+    },
     "config": {
+        "platform": {
+            "php": "8.1"
+        },
         "process-timeout": 600,
         "allow-plugins": {
             "composer/installers": true,
