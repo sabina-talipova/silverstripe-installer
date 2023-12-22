@@ -9,10 +9,10 @@
         "silverstripe/recipe-cms": "5.x-dev",
         "silverstripe-themes/simple": "3.x-dev",
         "silverstripe/login-forms": "5.x-dev",
-        "silverstripe/cms": "dev-pulls/5/versioned-ui as 5.x-dev",
-        "silverstripe/framework": "dev-pulls/5/versioned-ui as 5.x-dev",
-        "silverstripe/versioned": "dev-pulls/2/versioned-ui as 2.x-dev",
-        "silverstripe/frameworktest": "dev-pulls/1/versioned-ui-test-objects as 1.x-dev"
+        "silverstripe/cms": "5.x-dev",
+        "silverstripe/framework": "5.x-dev",
+        "silverstripe/versioned": "2.x-dev",
+        "silverstripe/frameworktest": "1.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.6"
@@ -31,19 +31,19 @@
     "repositories": {
         "x1": {
             "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-cms"
+            "url": "https://github.com/sabina-talipova/silverstripe-cms"
         },
         "x2": {
             "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-framework"
+            "url": "https://github.com/sabina-talipova/silverstripe-framework"
         },
         "x3": {
             "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-versioned"
+            "url": "https://github.com/sabina-talipova/silverstripe-versioned"
         },
         "x4": {
             "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-frameworktest"
+            "url": "https://github.com/sabina-talipova/silverstripe-frameworktest"
         }
     },
     "config": {
